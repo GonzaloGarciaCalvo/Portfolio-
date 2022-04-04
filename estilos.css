@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(36, 25, 25);
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 3rem;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+    width: 50%;
+}
+.boxConocimientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boxConocimientos {
+    
+    
+}
+.conocimientos__boxIconos {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 2rem;
+}
+.icono {
+    width: 8em;
+}
+.icono:hover {
+    transform: scale(1.2);
+}
