@@ -152,10 +152,17 @@ figure img{
     height: 3rem;
 }
 
+.btnDescargar{
+    margin-bottom: 2rem;
+}
+
 .iconoSubir {
     width: 2.5rem;
     height: 2.5rem;
     color: white;
+}
+footer div p {
+    font-size: 0.8rem;
 }
 
 /* colores */
