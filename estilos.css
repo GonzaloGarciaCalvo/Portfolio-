@@ -4,13 +4,25 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(36, 25, 25);
-    color: white;
+    color:#dcf9f6; ;
+    height: 100vh;
 }
+.body--efecto {
+    background: 
+        radial-gradient(ellipse at top, #112525 10%, transparent 80%),
+        radial-gradient(ellipse at left, #112525 20%, transparent 80%),
+        radial-gradient(ellipse at right, #112525 30%, transparent 70%),
+        radial-gradient(ellipse at bottom, #112525 20%, transparent 80%),  
+        radial-gradient(ellipse closest-side at 8% 100%, #08d2ff 95%, transparent 5%), 
+        radial-gradient(ellipse farthest-corner at 100% 0, #08d2ff 95%, transparent 5%),  
+        radial-gradient(ellipse at 100% 100%, #08d2ff 80%, transparent 20%), 
+        radial-gradient(ellipse farthest-corner  at 0 0, #08d2ff 30%, transparent 70%);     
+}
+
 h1 {
     text-align: center;
     font-size: 3em;
-    margin: 3rem;
+    padding: 3rem;
 }
 h2 {
     text-align: center;
@@ -19,8 +31,27 @@ h2 {
 }
 h3 {
     font-size: 1.5rem;
-    width: 50%;
 }
+/* NAVBAR */
+.navbar.navbar-light, footer {
+    background-color: #0b5c7e;
+}
+/* .nav-link {
+    color:#dcf9f6 !important;
+} */
+.navbar-nav {
+    margin-left: 1rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:#dcf9f6;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+/* Conocimientos  */
 .boxConocimientos {
     display: flex;
     flex-direction: column;
@@ -32,16 +63,164 @@ h3 {
     
 }
 .conocimientos__boxIconos {
-    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: #0b5c7e30;
     padding: 2rem;
 }
-.icono {
-    width: 8em;
+.boxIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
-.icono:hover {
+.boxIconJs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem 0.1rem 1rem;
+}
+.icono {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+}
+
+.iconoJs {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+}
+.iconoVsc {
+    width:5rem;
+    height: 5rem;
+    padding: 0.8rem;
+    background-color: white;
+}
+.iconName {
+    color: black;
+    color:#dcf9f6;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+.icono:hover, .iconoVsc:hover, .iconoJs:hover {
     transform: scale(1.2);
+}
+
+.proyecto {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.proyecto img{
+    box-sizing: border-box;
+    width: 100%;
+}
+figure img{
+    box-sizing: border-box;
+    width: 100%;
+}
+.descripcionProyecto {
+    display: none;
+    position: absolute; top:0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    box-sizing: border-box; 
+}
+.descripcionProyecto p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.proyecto:hover .descripcionProyecto{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+.boxRedes {
+    width: 20%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.iconoRedes {
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconoSubir {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+}
+
+/* colores */
+.color1 {background-color: #112525;}
+.color2 {background-color: #0b5c7e;}
+.color3 {background-color: #08d2ff;}
+.color4 {background-color: #0ffff7;}
+.color5 {background-color: #b7fff7;}
+
+
+/************ Ver CV  ************/
+.boxPdf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:1rem;
+}
+.pdf {
+    width: 70%;
+    height: 90vw;
+}
+a {
+    color:#dcf9f6;
+}
+a:hover {
+    color:white;
+}
+
+@media  (max-width:577px) {
+    h1 {
+        text-align: center;
+        font-size: 1.7em;
+        padding: 1rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 1.2em;
+        margin: 1.5rem;
+    }
+    .boxIcon {
+        margin: 0rem;
+    }
+    .iconoRedes {
+        width: 3rem;
+        height: 3rem;
+    }
+    .proyecto {
+        padding: 0.8rem;
+    }
+}
+@media  (min-width:576px) and (max-width:767px) {
+    .boxIcon {
+        margin: 0rem;
+    }
+    .iconoRedes {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+    .proyecto {
+        padding: 1rem;
+    }
+}
+@media  (min-width:768px) and (max-width:992px) {
+    .boxIcon {
+        margin: 0rem;
+    }
 }
