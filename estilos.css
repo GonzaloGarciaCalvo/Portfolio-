@@ -36,9 +36,7 @@ h3 {
 .navbar.navbar-light, footer {
     background-color: #0b5c7e;
 }
-/* .nav-link {
-    color:#dcf9f6 !important;
-} */
+
 .navbar-nav {
     margin-left: 1rem;
 }
@@ -58,10 +56,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.boxConocimientos {
-    
-    
-}
+
 .conocimientos__boxIconos {
     display: flex;
     flex-direction: row;
@@ -195,6 +190,9 @@ a:hover {
         text-align: center;
         font-size: 1.2em;
         margin: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
     }
     .boxIcon {
         margin: 0rem;
