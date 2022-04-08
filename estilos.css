@@ -183,6 +183,12 @@ a {
 a:hover {
     color:white;
 }
+.cvMovil{
+    display: none;
+}
+.footer{
+    position: absolute; bottom: 0;
+}
 
 @media  (max-width:577px) {
     h1 {
@@ -207,6 +213,14 @@ a:hover {
     }
     .proyecto {
         padding: 0.8rem;
+    }
+    .boxPdf {
+        display: none;
+    }
+    .cvMovil{
+        display: block;
+        width: 100%;
+        padding-top: 3rem;
     }
 }
 @media  (min-width:576px) and (max-width:767px) {
