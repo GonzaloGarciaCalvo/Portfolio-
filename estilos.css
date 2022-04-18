@@ -32,7 +32,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
 }
-/* NAVBAR */
+/*** Navbar ***/
 .navbar.navbar-light, footer {
     background-color: #0b5c7e;
 }
@@ -62,7 +62,8 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #0b5c7e30;
-    padding: 2rem;
+    padding: 1rem;
+    width: 80%;
 }
 .boxIcon {
     display: flex;
@@ -103,13 +104,14 @@ h3 {
 .icono:hover, .iconoVsc:hover, .iconoJs:hover {
     transform: scale(1.2);
 }
-
+/*** Proyectos  ***/
 .proyecto {
     box-sizing: border-box;
     position: relative;
     padding: 0rem;
-    margin-top: 1.5rem;
-    width: 45%;
+    margin-top: 2rem;
+    width: 40%;
+    min-width: 23rem;
 }
 .proyecto img{
     box-sizing: border-box;
@@ -143,6 +145,14 @@ figure img{
     text-align: center;
     color: white;
 }
+figcaption a {
+    font-size: 1.3rem;
+    background: rgba(56, 55, 55, 0.6);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+}
+/*** Redes ***/
 .boxRedes {
     width: 20%;
     height: 100%;
@@ -213,7 +223,7 @@ a:hover {
         font-size: 1rem;
     }
     .boxIcon {
-        margin: 0rem;
+        margin: 0.7rem 0 0 0;
     }
     .iconoRedes {
         width: 3rem;
@@ -221,6 +231,7 @@ a:hover {
     }
     .proyecto {
         width: 90%;
+        min-width: auto;
     }
     .boxPdf {
         display: none;
@@ -233,18 +244,24 @@ a:hover {
 }
 @media  (min-width:576px) and (max-width:767px) {
     .boxIcon {
-        margin: 0rem;
+        margin: 0.9rem 0 0 0;
     }
     .iconoRedes {
         width: 3.8rem;
         height: 3.8rem;
     }
     .proyecto {
-        padding: 1rem;
+        width: 80%;
+        padding: 0rem;
     }
 }
 @media  (min-width:768px) and (max-width:992px) {
     .boxIcon {
-        margin: 0rem;
+        margin: 1.1rem 0 0 0;
+    }
+    .proyecto {
+        padding: 0rem;
+        width: 42%;
+        min-width: 23rem;
     }
 }
