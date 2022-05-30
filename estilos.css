@@ -4,7 +4,8 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#dcf9f6; ;
+    /* color:#dcf9f6;  */
+    color:#eafbf9; 
     height: 100vh;
 }
 .body--efecto {
