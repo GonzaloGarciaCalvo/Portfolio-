@@ -124,7 +124,8 @@ h2 {
     margin: 2rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 /*** Navbar ***/
 .navbar.navbar-light, footer {
@@ -142,7 +143,16 @@ h3 {
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
+/* Sobre mi*/
 
+.sobreMi {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.sobreMi p {
+    /* background-color: #112525; */
+    padding: 1em;
+}
 /* Conocimientos  */
 .boxConocimientos {
     display: flex;
