@@ -175,6 +175,14 @@ h3 {
     align-items: center;
     margin: 1rem;
 }
+.boxIconTs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 0;
+}
+
 .boxIconJs {
     display: flex;
     flex-direction: column;
@@ -198,14 +206,20 @@ h3 {
     padding: 0.8rem;
     background-color: white;
 }
+.iconoTs {
+    width: 5rem;
+    height: 5rem;
+    /* background-color: white; */
+    padding: 0;
+}
 .iconName {
     color: black;
     color:#dcf9f6;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.3rem;
     text-align: center;
 }
-.icono:hover, .iconoVsc:hover, .iconoJs:hover {
+.icono:hover, .iconoVsc:hover, .iconoJs:hover, .iconoTs:hover {
     transform: scale(1.2);
 }
 /*** Proyectos  ***/
